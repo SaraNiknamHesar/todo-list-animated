@@ -17,7 +17,7 @@ addBtn.addEventListener("click", showModal);
 todoSubmit.addEventListener("click", addNote);
 todo.addEventListener("dragstart", (event) => {
     draggedElement = event.target;
-    // event.dataTransfer.setData("getClass", event.target.class);
+
 
 
 });
@@ -27,10 +27,8 @@ Array.from(statusElement).forEach((statusElement) => {
     });
 
 });
-
 Array.from(statusElement).forEach((statesElem) => {
     statesElem.addEventListener("drop", (event) => {
-        // event.preventDefault();
         if (draggedElement) {
             statesElem.appendChild(draggedElement);
             draggedElement = null;
@@ -41,7 +39,6 @@ Array.from(statusElement).forEach((statesElem) => {
 
     });
 });
-
 function showModal() {
     modal.style.top = "50%";
 }
