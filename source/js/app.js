@@ -1,8 +1,6 @@
 let $ = document;
-let body = document.body;
-body.onload = (event) => {
-    event.preventdefault;
-};
+
+
 let addBtn = $.querySelector("#add_btn");
 let modal = $.querySelector(".modal");
 let todoInput = $.querySelector("#todo_input");
